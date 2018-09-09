@@ -1,0 +1,85 @@
+﻿.tile-header {
+    height: 50px;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.tile-header-name-container {
+    width: 220px;
+    height: 43px;
+    top: 7px;
+    left: 0px;
+    background-color: #039BE6;
+    position: absolute;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+    font-size:14px;
+    line-height: 20px;
+}
+
+    .tile-header-name-container span {
+        padding: 2px;
+    }
+
+.tile-settings {
+    background-color: transparent;
+    width: 20px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    position: absolute;
+}
+    .tile-settings.open .tile-settings-point {
+        background-color: #039be5;
+    }
+
+    .tile-settings .tile-settings-point {
+        background-color: #C6CDD7;
+        width: 4px;
+        height: 4px;
+        border-radius: 3px;
+        margin-top: 5px;
+        margin-left: 9px;
+        pointer-events: none;
+    }
+
+.tile-setting-popup {
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+    right: 8px;
+    top: 32px;
+    width: 80px;
+    display: none;
+}
+
+    .tile-setting-popup.open {
+        opacity: 1;
+        display: inline;
+    }
+
+.tile-setting-item {
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 1px 0px;
+    background-color: #039be5;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+    .tile-setting-item:hover {
+        background-color: #22b2f9;
+    }
+
+.tile-content {
+    height: calc(100% - 50px);
+    width:100%;
+    background-color: transparent;
+}
+
+.sa-tile-top-background{
+    background-color:#EFFAFE;
+}

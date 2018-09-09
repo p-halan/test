@@ -1,0 +1,7 @@
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\bin\LayoutPanel.dll.config
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\bin\LayoutPanel.dll
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\bin\LayoutPanel.pdb
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\obj\Debug\LayoutPanel.dll
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\obj\Debug\LayoutPanel.pdb
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\obj\Debug\LayoutPanel.csprojResolveAssemblyReference.cache
+D:\CurrentWork2015\Apps\LayoutPanel\LayoutPanel\obj\Debug\LayoutPanel.csproj.CoreCompileInputs.cache

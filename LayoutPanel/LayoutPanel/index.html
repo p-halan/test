@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/libs/jquery/jquery-1.7.1.min.js"></script>
+    <script src="js/libs/jquery/jquery-ui.js"></script>
+    <script src="js/plugins/utils.js"></script>
+</head>
+<body id="mainbody">
+</body>
+</html>
+<script data-main="js/main" src="js/libs/jquery/require.js"></script>
+<script type="text/javascript">
+    CURRENT_DOMAIN = "";
+    require(["js/libs/knockout.js", 'js/viewmodels/mainModel.js', "text!/pages/mainModel.html?v=231"], function (ko, mainModel, htmlContent) {
+        $('#mainbody').html(htmlContent);
+        ko.applyBindings(mainModel, $("#mainbody")[0]);
+        mainModel.render();
+    });
+</script>

@@ -1,0 +1,96 @@
+﻿<div id="mainmodel-container" style="width: 100%; height:100%; position: relative;">
+    <div id="tiles-panel-container" style="width: calc(100% - 170px); height: 100%; margin-left:170px; overflow:auto; position: relative; background-color: transparent;">
+        <div id="tiles-panel" style="height: 100%; width:100%; position:relative; background-color:transparent;" data-bind="template: { name: getTemplateFunc, afterRender: afterTargetRenderEvent, foreach: tiles }">
+        </div>
+    </div>
+    <button data-bind="click: saveLayout" style="position: fixed; left:10px; top:10px;">Save Layout</button>
+    <div id="left-side-menu" style="position: fixed; left:0px; top:30px; height:calc(100px - 30px); width:150px; overflow:auto;" data-bind="foreach: leftSideItems">
+        <div data-bind="attr: { id: Id() }, event: { mouseover: $root.menuItemMouseDown}" style="width:100px; height: 100px; background-color: white; margin:10px;">
+            <span data-bind="text: Name()" style="line-height:20px; margin-left:10px;"></span>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="template-tile">
+    <div style="position: absolute; left: 0px; top:0px;" data-bind="attr: { id: Id() }, style: { width: (width() + 'px'), height: (height() + 'px') }">
+        <div class="tile-container material-effect" style="width:100%; height:100%; background-color: white; float: left; position: relative;">
+            <div class="tile-header">
+                <div class="tile-header-name-container" style="display: table; line-height: 40px;">
+                    <div style="display: table-cell; width: 43px; vertical-align: middle; text-align: center;">
+                        <img style="width:18px; height:18px;" src="https://az412604.vo.msecnd.net/static/hub-assets/v30/img/logicbuilder/assets/icon_share.svg" />
+                    </div>
+                    <div style="display: table-cell;">
+                        <span data-bind="text: Title"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-content">
+                <span>Tile Content</span>
+            </div>
+            <div class="tile-settings" data-bind="css: { 'open': IsSettingsOpened() }, click: onOpenSettings">
+                <div class="tile-settings-point"></div>
+                <div class="tile-settings-point"></div>
+                <div class="tile-settings-point"></div>
+            </div>
+            <div class="tile-setting-popup" data-bind="css: { 'open': IsSettingsOpened() }">
+                <div class="tile-setting-item">Settings</div>
+                <div class="tile-setting-item" data-bind="click: $root.removeTile">Remove</div>
+            </div>
+
+            <div class="tile-resize-corner"></div>
+            <div class="tile-resize-width" style="width:0px; height:1px; position: absolute; background-color: black; left: 0px; top:0px;"></div>
+            <div class="tile-resize-height" style="width:1px; height:0px; position: absolute; background-color: black; left: 0px; top:0px;"></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="template-sa-tile">
+    <div style="position: absolute; left: 0px; top:0px;" data-bind="attr: { id: Id() }, style: { width: (width() + 'px'), height: (height() + 'px') }">
+        <div class="tile-container material-effect" style="width:100%; height:100%; background-color: white; float: left; position: relative;">
+            <div class="tile-header" data-bind="css:{'sa-tile-top-background': hasChartDivision()}">
+                <div class="tile-header-name-container" style="display: table;">
+                    <div style="display: table-cell; width: 43px; vertical-align: middle; text-align: center;">
+                        <img style="width:18px; height:18px;" src="https://az412604.vo.msecnd.net/static/hub-assets/v30/img/logicbuilder/assets/icon_share.svg"/>
+                    </div>
+                    <div style="display: table-cell;">
+                        <div>
+                            <span data-bind="text: Title"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: SubTitle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-content">
+                <div class="sa-tile-top-background" style="width:100%;" data-bind="style: { height: chartHeight() + 'px'}, visible: hasChartDivision">
+
+                </div>
+                <div data-bind="style: { height: chartHeight() + 'px'}">
+                    <div data-bind="attr: { id: Id() + '_tile-chart' }" class="chart-container" style="width:100%; height:100%; background:#F9F9F9;" unselectable="off"></div>
+                </div>
+            </div>
+            <div class="tile-settings" data-bind="css: { 'open': IsSettingsOpened() }, click: onOpenSettings">
+                <div class="tile-settings-point"></div>
+                <div class="tile-settings-point"></div>
+                <div class="tile-settings-point"></div>
+            </div>
+            <div class="tile-setting-popup" data-bind="css: { 'open': IsSettingsOpened() }">
+                <div class="tile-setting-item" data-bind="click: $root.removeTile">Remove</div>
+            </div>
+
+            <div class="tile-resize-corner"></div>
+            <div class="tile-resize-width" style="width:0px; height:1px; position: absolute; background-color: black; left: 0px; top:0px;"></div>
+            <div class="tile-resize-height" style="width:1px; height:0px; position: absolute; background-color: black; left: 0px; top:0px;"></div>
+        </div>
+    </div>
+</script>
+
+<script id="site-analysis-chart-tooltip-item" type="text/html">
+    <li class="{3}">
+        <div style="color:{2};">{0}</div>
+        <div>{1}</div>
+    </li>
+</script>
+
+

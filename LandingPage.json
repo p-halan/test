@@ -1,0 +1,434 @@
+{
+  "Url": "Http://",
+  "PageName": "Performance Landing page",
+  "UserName": "David",
+  "WelcomeMessageTemplate": "Welcome back {UserName}",
+  "LayoutColumns": 3,
+  "Sections": [
+    {
+      "MapItems": [
+        {
+          "InstallationId": "52268cde-279d-4ab9-bb7b-b7c9ea0fa22a",
+          "Name": "Hewlett - (BE-144866)",
+          "Latitude": 40.6402096,
+          "Longitude": -73.6998417,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "785b89f2-6087-4886-b9bb-250dcf6dded9",
+          "Name": "Waterman Village Safeway - (BE-196419)",
+          "Latitude": 38.2720448,
+          "Longitude": -122.0528487,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "68ff4676-94c5-48cf-8261-ca90ff49e67c",
+          "Name": "Fairfield Atm (Raleys) - (BE-105083)",
+          "Latitude": 38.2576621,
+          "Longitude": -122.0657729,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "8be87b73-0060-4254-930f-f9c22ea8ce2a",
+          "Name": "Fairfield - (BE-199190)",
+          "Latitude": 38.2484105,
+          "Longitude": -122.0448277,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "9f0f4a8d-3140-4140-9cfe-0864db74d501",
+          "Name": "Hm Fairfield-Oliver - (BE-150931)",
+          "Latitude": 38.251255,
+          "Longitude": -122.069696,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "f40f4f07-15cc-458d-9af3-7369ba9d1c45",
+          "Name": "Woodcreek Plaza Atm - (BE-106285)",
+          "Latitude": 38.2576523,
+          "Longitude": -122.0671523,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "ab2c0221-e261-4ad4-baa1-cc7862a073c1",
+          "Name": "Oakhurst - (BE-199612)",
+          "Latitude": 37.3319626,
+          "Longitude": -119.6577246,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        },
+        {
+          "InstallationId": "f8e90900-8099-41a8-b9ce-9d6f91ae804c",
+          "Name": "150 E 42nd St - (BE-106312)",
+          "Latitude": 40.7509164,
+          "Longitude": -73.9754534,
+          "DataQualityValue": 0.0,
+          "GatewayStatusValue": 0.0,
+          "CriticalAlertsValue": 0.0
+        }
+      ],
+      "NewDataUrl": null,
+      "Name": "Gateway and ALerts Map",
+      "TitleHtml": null,
+      "SectionType": "MapSection",
+      "LayoutRow": 0,
+      "LayoutRowSpan": 1,
+      "LayoutColumn": 0,
+      "LayoutColSpan": 3
+    },
+    {
+      "Kpis": [
+        {
+          "Name": "Maintenance",
+          "DescriptionHtml": "There are 4 critical maintenance alerts accross your sites",
+          "CurrentValue": 66.0,
+          "TrendPoints": [
+            {
+              "Timestamp": "2017-05-01T00:00:00",
+              "Value": 66.0
+            },
+            {
+              "Timestamp": "2017-06-01T00:00:00",
+              "Value": 67.0
+            },
+            {
+              "Timestamp": "2017-07-01T00:00:00",
+              "Value": 68.0
+            },
+            {
+              "Timestamp": "2017-08-01T00:00:00",
+              "Value": 69.0
+            },
+            {
+              "Timestamp": "2017-09-01T00:00:00",
+              "Value": 68.0
+            },
+            {
+              "Timestamp": "2017-10-01T00:00:00",
+              "Value": 68.0
+            }
+          ],
+          "Data": [
+            {
+              "Alerts": [
+                {
+                  "Icon": "AllGood.png",
+                  "ReportHtmlTemplate": "92% zip hydro taps are ON during occupancied hours",
+                  "AlertParentId": null,
+                  "AlertName": null
+                },
+                {
+                  "Icon": "SemiGood.png",
+                  "ReportHtmlTemplate": "82% stores are at setpoint during occupied hours",
+                  "AlertParentId": null,
+                  "AlertName": null
+                }
+              ],
+              "NewDataUrl": null,
+              "Name": "Featured Alerts",
+              "TitleHtml": "Your featured alerts performance",
+              "SectionType": "AlertsSection"
+            },
+            {
+              "Alerts": [
+                {
+                  "Icon": "BadRed.png",
+                  "ReportHtmlTemplate": "A1000-1 - Occupied Hot Space Temp",
+                  "AlertParentId": null,
+                  "AlertName": null
+                },
+                {
+                  "Icon": "BadRed.png",
+                  "ReportHtmlTemplate": "A1000-1 - Occupied Space exceeding setpoint",
+                  "AlertParentId": null,
+                  "AlertName": null
+                }
+              ],
+              "NewDataUrl": null,
+              "Name": "Top 5 Critical",
+              "TitleHtml": "See details for the top 5 new critical alerts",
+              "SectionType": "AlertsSection"
+            },
+            {
+              "EventCategory": "Maintenance",
+              "TotalEventsAcrossSites": 5,
+              "TotalAssignedEvents": 2,
+              "TotalMentionedEvents": 3,
+              "EventCommentMentions": [
+                {
+                  "UserInitials": null,
+                  "Subject": "HVAC running high in sales area",
+                  "Message": "@David please check the due date for this event ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                },
+                {
+                  "UserInitials": null,
+                  "Subject": "Setpoint too low",
+                  "Message": "@David please adjust setpoint on site ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                }
+              ],
+              "EventCommentAssigned": [
+                {
+                  "UserInitials": null,
+                  "Subject": "Setpoint too low",
+                  "Message": "@David please adjust setpoint on site ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                }
+              ],
+              "TotalPartOfResolved": 3,
+              "TotalPartOfSoon": 3,
+              "TotalPartOfPastDue": 3,
+              "NewDataUrl": null,
+              "Name": "Events",
+              "TitleHtml": null,
+              "SectionType": "EventsSection"
+            }
+          ]
+        },
+        {
+          "Name": "Energy",
+          "DescriptionHtml": "There are 6 critical energy alerts accross your sites",
+          "CurrentValue": 78.0,
+          "TrendPoints": [
+            {
+              "Timestamp": "2017-05-01T00:00:00",
+              "Value": 20.0
+            },
+            {
+              "Timestamp": "2017-06-01T00:00:00",
+              "Value": 88.0
+            },
+            {
+              "Timestamp": "2017-07-01T00:00:00",
+              "Value": 45.0
+            },
+            {
+              "Timestamp": "2017-08-01T00:00:00",
+              "Value": 75.0
+            },
+            {
+              "Timestamp": "2017-09-01T00:00:00",
+              "Value": 77.0
+            },
+            {
+              "Timestamp": "2017-10-01T00:00:00",
+              "Value": 78.0
+            }
+          ],
+          "Data": [
+            {
+              "Alerts": [
+                {
+                  "Icon": "AllGood.png",
+                  "ReportHtmlTemplate": "92% zip hydro taps are ON during occupancied hours",
+                  "AlertParentId": null,
+                  "AlertName": null
+                },
+                {
+                  "Icon": "SemiGood.png",
+                  "ReportHtmlTemplate": "82% stores are at setpoint during occupied hours",
+                  "AlertParentId": null,
+                  "AlertName": null
+                }
+              ],
+              "NewDataUrl": null,
+              "Name": "Featured Alerts",
+              "TitleHtml": "Your featured alerts performance",
+              "SectionType": "AlertsSection"
+            },
+            {
+              "Alerts": [
+                {
+                  "Icon": "BadRed.png",
+                  "ReportHtmlTemplate": "A1000-1 - Occupied Hot Space Temp",
+                  "AlertParentId": null,
+                  "AlertName": null
+                },
+                {
+                  "Icon": "BadRed.png",
+                  "ReportHtmlTemplate": "A1000-1 - Occupied Space exceeding setpoint",
+                  "AlertParentId": null,
+                  "AlertName": null
+                }
+              ],
+              "NewDataUrl": null,
+              "Name": "Top 5 Critical",
+              "TitleHtml": "See details for the top 5 new critical alerts",
+              "SectionType": "AlertsSection"
+            },
+            {
+              "EventCategory": "Energy",
+              "TotalEventsAcrossSites": 5,
+              "TotalAssignedEvents": 2,
+              "TotalMentionedEvents": 3,
+              "EventCommentMentions": [
+                {
+                  "UserInitials": null,
+                  "Subject": "HVAC running high in sales area",
+                  "Message": "@David please check the due date for this event ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                },
+                {
+                  "UserInitials": null,
+                  "Subject": "Setpoint too low",
+                  "Message": "@David please adjust setpoint on site ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                }
+              ],
+              "EventCommentAssigned": [
+                {
+                  "UserInitials": null,
+                  "Subject": "Setpoint too low",
+                  "Message": "@David please adjust setpoint on site ....",
+                  "EventDateTime": "0001-01-01T00:00:00"
+                }
+              ],
+              "TotalPartOfResolved": 3,
+              "TotalPartOfSoon": 3,
+              "TotalPartOfPastDue": 3,
+              "NewDataUrl": null,
+              "Name": "Events",
+              "TitleHtml": null,
+              "SectionType": "EventsSection"
+            }
+          ]
+        },
+        {
+          "Name": "Comfort",
+          "DescriptionHtml": "There are 20 critical comfort alerts accross your sites",
+          "CurrentValue": 67.0,
+          "TrendPoints": [
+            {
+              "Timestamp": "2017-05-01T00:00:00",
+              "Value": 68.0
+            },
+            {
+              "Timestamp": "2017-06-01T00:00:00",
+              "Value": 69.0
+            },
+            {
+              "Timestamp": "2017-07-01T00:00:00",
+              "Value": 65.0
+            },
+            {
+              "Timestamp": "2017-08-01T00:00:00",
+              "Value": 66.0
+            },
+            {
+              "Timestamp": "2017-09-01T00:00:00",
+              "Value": 67.0
+            },
+            {
+              "Timestamp": "2017-10-01T00:00:00",
+              "Value": 67.0
+            }
+          ],
+          "Data": []
+        }
+      ],
+      "NewDataUrl": null,
+      "Name": "Kpis",
+      "TitleHtml": null,
+      "SectionType": "KpiSection",
+      "LayoutRow": 1,
+      "LayoutRowSpan": 1,
+      "LayoutColumn": 0,
+      "LayoutColSpan": 3
+    },
+    {
+      "RankedItems": [
+        {
+          "Name": "DK",
+          "ThumbnailUrl": null,
+          "Value": 20
+        },
+        {
+          "Name": "JT",
+          "ThumbnailUrl": null,
+          "Value": 18
+        },
+        {
+          "Name": "TB",
+          "ThumbnailUrl": null,
+          "Value": 15
+        },
+        {
+          "Name": "PR",
+          "ThumbnailUrl": null,
+          "Value": 5
+        }
+      ],
+      "NewDataUrl": null,
+      "Name": "Most Active Users on CBA",
+      "TitleHtml": null,
+      "SectionType": "RankingSection",
+      "LayoutRow": 2,
+      "LayoutRowSpan": 1,
+      "LayoutColumn": 0,
+      "LayoutColSpan": 1
+    },
+    {
+      "RankedItems": [
+        {
+          "Name": "Created",
+          "ThumbnailUrl": null,
+          "Value": 10
+        },
+        {
+          "Name": "Resolved",
+          "ThumbnailUrl": null,
+          "Value": 3
+        },
+        {
+          "Name": "Abandoned",
+          "ThumbnailUrl": null,
+          "Value": 1
+        }
+      ],
+      "NewDataUrl": null,
+      "Name": "Event Activities This Month",
+      "TitleHtml": null,
+      "SectionType": "RankingSection",
+      "LayoutRow": 3,
+      "LayoutRowSpan": 1,
+      "LayoutColumn": 0,
+      "LayoutColSpan": 1
+    },
+    {
+      "RankedItems": [
+        {
+          "Name": "Oxford Kpis Dashboard",
+          "ThumbnailUrl": "https://switchhub.blob.core.windows.net/static/hub-assets/v40/smartworkspace/ccdd2f9e-58b8-4ccf-b014-e0c693a502e4.png",
+          "Value": 100
+        },
+        {
+          "Name": "Monthly Energy Report",
+          "ThumbnailUrl": "https://switchhub.blob.core.windows.net/static/hub-assets/v40/smartworkspace/ccdd2f9e-58b8-4ccf-b014-e0c693a502e4.png",
+          "Value": 30
+        }
+      ],
+      "NewDataUrl": null,
+      "Name": "Most Visited Workspaces",
+      "TitleHtml": null,
+      "SectionType": "RankingSection",
+      "LayoutRow": 4,
+      "LayoutRowSpan": 1,
+      "LayoutColumn": 0,
+      "LayoutColSpan": 1
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+﻿body {
+    background: #ECEEF3;
+}
+
+.material-effect {
+    box-shadow: 0px 1px 4px 0px rgba(0, 1, 1, 0.5);
+}
+
+
+.drag-box-border{
+	background-color:#E8E8E8;
+	width:250px;
+    height:100px;	
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+    padding:2px
+}
+
+.drop-enter-Class {
+    border-bottom: 2px solid black;
+}
+
+.drop-leave-Class
+{
+    border-bottom:1px solid #D3D3D3;
+}
+
+.draggable
+{
+	cursor: pointer;
+}
+
+.draggable:hover
+{
+    opacity: 0.7;
+}
+
+.tile-header{
+    cursor: pointer;
+}
+
+.tile-resize-corner {
+    display:none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 15px solid #93A6B0;
+    border-left: 15px solid transparent;
+    cursor: pointer;
+}
+
+.tile-container {
+    margin: 5px;
+}
+
+.tile-container:hover .tile-resize-corner{
+    display:inline-block;
+}
+
