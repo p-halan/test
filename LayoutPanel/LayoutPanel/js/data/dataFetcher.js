@@ -5,7 +5,7 @@
     DataFetcher.prototype.dalGet = function (url, params, callback) {
         $.ajax({
             url: url,
-            type: "POST",
+            type: "GET",
             crossDomain: true,
             data: params,
             contentType: 'application/json; charset=utf-8',

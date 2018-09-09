@@ -81,7 +81,7 @@
         }
       ],
       "NewDataUrl": null,
-      "Name": "Gateway and ALerts Map",
+      "Name": "Gateway and Alerts Map",
       "TitleHtml": null,
       "SectionType": "MapSection",
       "LayoutRow": 0,
@@ -102,7 +102,7 @@
             },
             {
               "Timestamp": "2017-06-01T00:00:00",
-              "Value": 67.0
+              "Value": 43.0
             },
             {
               "Timestamp": "2017-07-01T00:00:00",
@@ -110,7 +110,7 @@
             },
             {
               "Timestamp": "2017-08-01T00:00:00",
-              "Value": 69.0
+              "Value": 71.0
             },
             {
               "Timestamp": "2017-09-01T00:00:00",
@@ -206,7 +206,7 @@
           "TrendPoints": [
             {
               "Timestamp": "2017-05-01T00:00:00",
-              "Value": 20.0
+              "Value": 30.0
             },
             {
               "Timestamp": "2017-06-01T00:00:00",
@@ -226,7 +226,7 @@
             },
             {
               "Timestamp": "2017-10-01T00:00:00",
-              "Value": 78.0
+              "Value": 48.0
             }
           ],
           "Data": [
@@ -313,7 +313,7 @@
           "CurrentValue": 67.0,
           "TrendPoints": [
             {
-              "Timestamp": "2017-05-01T00:00:00",
+              "Timestamp": "2017-03-01T00:00:00",
               "Value": 68.0
             },
             {
@@ -322,7 +322,7 @@
             },
             {
               "Timestamp": "2017-07-01T00:00:00",
-              "Value": 65.0
+              "Value": 34.0
             },
             {
               "Timestamp": "2017-08-01T00:00:00",
@@ -330,11 +330,11 @@
             },
             {
               "Timestamp": "2017-09-01T00:00:00",
-              "Value": 67.0
+              "Value": 87.0
             },
             {
               "Timestamp": "2017-10-01T00:00:00",
-              "Value": 67.0
+              "Value": 60.0
             }
           ],
           "Data": []
@@ -345,7 +345,7 @@
       "TitleHtml": null,
       "SectionType": "KpiSection",
       "LayoutRow": 1,
-      "LayoutRowSpan": 1,
+      "LayoutRowSpan": 2,
       "LayoutColumn": 0,
       "LayoutColSpan": 3
     },
@@ -374,10 +374,11 @@
       ],
       "NewDataUrl": null,
       "Name": "Most Active Users on CBA",
-      "TitleHtml": null,
+      "Description": "",
+      "TitleHtml": "Power-user board",
       "SectionType": "RankingSection",
-      "LayoutRow": 2,
-      "LayoutRowSpan": 1,
+      "LayoutRow": 3,
+      "LayoutRowSpan": 2,
       "LayoutColumn": 0,
       "LayoutColSpan": 1
     },
@@ -401,11 +402,11 @@
       ],
       "NewDataUrl": null,
       "Name": "Event Activities This Month",
-      "TitleHtml": null,
+      "TitleHtml": "Events",
       "SectionType": "RankingSection",
       "LayoutRow": 3,
-      "LayoutRowSpan": 1,
-      "LayoutColumn": 0,
+      "LayoutRowSpan": 2,
+      "LayoutColumn": 1,
       "LayoutColSpan": 1
     },
     {
@@ -423,11 +424,11 @@
       ],
       "NewDataUrl": null,
       "Name": "Most Visited Workspaces",
-      "TitleHtml": null,
+      "TitleHtml": "Workspaces",
       "SectionType": "RankingSection",
-      "LayoutRow": 4,
-      "LayoutRowSpan": 1,
-      "LayoutColumn": 0,
+      "LayoutRow": 3,
+      "LayoutRowSpan": 2,
+      "LayoutColumn": 2,
       "LayoutColSpan": 1
     }
   ]

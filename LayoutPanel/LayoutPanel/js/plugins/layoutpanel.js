@@ -126,9 +126,8 @@
                 return JSON.stringify(layoutList);
             };
 
-            self.loadLayout = function (layoutString) {
-                if (layoutString != undefined && layoutString != null) {
-                    var layoutItems = JSON.parse(layoutString);
+            self.loadLayout = function (layoutItems) {
+                if (layoutItems != undefined && layoutItems != null) {
                     for (var i = 0; i < layoutItems.length; i++) {
                         var target = null;
                         for (var j = 0; j < self.targets.length; j++) {

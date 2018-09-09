@@ -1,0 +1,67 @@
+.kpi-item {
+    display: block;
+    float: left;
+    margin:5px;
+    width: 280px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding: 0 30px;
+}
+
+.kpi-item .graph {
+    background-color: #263238;
+    color: #FFF;
+    text-align: center;
+    padding: 45px 0 20px;
+    position: relative;
+}
+
+.kpi-item .graph .title {
+    letter-spacing: 2px;
+}
+
+.kpi-item .graph .value {
+    font-size: 28px;
+}
+
+.kpi-item .graph .improvement-badge{
+    border-radius:2px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 20px;
+    line-height: 20px;
+    width: 55px;
+    background-color: #43A1A2;
+
+}
+
+.kpi-item .graph .icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.kpi-item .details {
+    background-color: #FFF;
+    padding: 20px 12px 20px 30px;
+}
+
+.kpi-item .details .title {
+    color: #9F9E9E;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.kpi-item .details .description{
+    font-weight: bold;
+    color: #263238 ;
+    font-size: 18px;
+    line-height: 26px;
+}
